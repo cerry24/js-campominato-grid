@@ -1,7 +1,18 @@
-const grid = document.getElementById('ms_grid');
+function getNewGridSquare () {
+    const newSquare = document.createElement('div');
+
+    newSquare.classList.add('ms_square');
+
+    return newSquare;
+}
+
+
+
+
+const grid = document.querySelector('div.ms_grid');
 
 for ( i = 1; i <= 100; i++ ) {
-    const gridSquare = document.createElement('div');
+    const gridSquare = getNewGridSquare();
 
     gridSquare.innerHTML = i;
 

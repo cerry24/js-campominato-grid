@@ -1,0 +1,10 @@
+.ms_grid {
+    width: 700px;
+    height: 700px;
+}
+
+.ms_grid .ms_square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 2px black solid;
+}
