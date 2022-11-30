@@ -3,6 +3,10 @@ function getNewGridSquare () {
 
     newSquare.classList.add('ms_square');
 
+    newSquare.addEventListener('click', function(){
+        newSquare.classList.toggle('clicked');
+    })
+
     return newSquare;
 }
 
