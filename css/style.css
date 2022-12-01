@@ -1,3 +1,8 @@
+header,
+footer {
+    background-color: white;
+}
+
 main.bg-aquamarine {
     background-color: #7fffd4;
 }
@@ -12,11 +17,9 @@ main.bg-aquamarine {
     height: calc(100% / 10);
     border: 2px black solid;
     cursor: pointer;
-    font-size: large;
-    padding: 18px 24px;
 }
 
 
 .ms_square.clicked {
-    background-color: lightblue;
+    background-color: rgb(103, 188, 216);
 }

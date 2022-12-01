@@ -1,7 +1,7 @@
 function getNewGridSquare () {
     const newSquare = document.createElement('div');
 
-    newSquare.classList.add('ms_square');
+    newSquare.classList.add('ms_square', 'd-flex');
 
     newSquare.addEventListener('click', function(){
         newSquare.classList.toggle('clicked');
@@ -22,12 +22,14 @@ btnPlay.addEventListener('click', function() {
     const main = document.querySelector('main');
     const grid = document.querySelector('div.ms_grid');
 
-    main.classList.toggle('bg-aquamarine');
+    main.classList.add('bg-aquamarine');
+
+    grid.innerHTML = "";
 
     for ( i = 1; i <= 100; i++ ) {
         const gridSquare = getNewGridSquare();
 
-        gridSquare.innerHTML = i;
+        gridSquare.innerHTML = `<span class="fs-4 m-auto"> ${i} </span>`;
 
         grid.appendChild(gridSquare);
     }
